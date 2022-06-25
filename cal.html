@@ -1,0 +1,29 @@
+<html>
+<body>
+<script>
+function show(input)
+{ document.getElementById("res").value+=input;
+}
+function cal()
+{ var output=eval(document.getElementById("res").value);
+
+ document.getElementById("res").value=output;
+
+}
+function Ac()
+{
+	document.getElementById("res").value=" ";
+	}
+</script>
+<center><table border="1" width="400" height="400" >
+<tr bgcolor="black"><td colspan="3" input><input type="text" id="res"></input></td><td><button type="button" onclick="Ac()">Ac</button></td></tr>
+<tr><td><button type="button" onclick="show('1')">1</button></td><td><button type="button" onclick="show('2')">2</button></td><td><button type="button" onclick="show('3')">3</button>
+</td><td><button type="button" onclick="show('4')">4</button></td></tr>
+<tr><td><button type="button" onclick="show('5')">5</button></td><td><button type="button" onclick="show('6')">6</button></td><td><button type="button" onclick="show('7')">7</button>
+</td><td><button type="button" onclick="show('8')">8</button></td></tr>
+<tr><td><button type="button" onclick="show('9')">9</button></td><td><button type="button" onclick="show('0')">0</button></td><td><button type="button" onclick="show('+')">+</button></td><td><button type="button" onclick="cal()">=</button></td></tr>
+<tr><td><button type="button" onclick="show('*')">*</button></td><td><button type="button" onclick="show('-')">-</button></td><td><button type="button" onclick="show('/')">/</button></td><td><button type="button" onclick="show('%')">%</button></td></tr>
+
+</table></center>
+</body>
+</html>
